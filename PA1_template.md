@@ -1,9 +1,4 @@
----
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
+# Reproducible Research: Peer Assessment 1
 
 Reading the dataset:
 
@@ -58,7 +53,7 @@ hist(steps_per_day$steps, col="blue", main = "Histogram steps per day",
      xlab = "Total number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
 
 #### 3- Calculate and report the mean and median of the total number of steps taken per day
 
@@ -120,7 +115,7 @@ with(steps_per_interval, plot(interval, steps, type = "l", col = "blue",
                               ylab="average number of steps"))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
 
 ### 2 - Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -221,7 +216,7 @@ hist(final_steps_per_day$steps, col = "blue", main = "Histogram Steps Per Day",
      xlab="Total number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png)
 
 Mean of steps: 10,766  
 Median of steps: 10,766
@@ -273,4 +268,4 @@ library(ggplot2)
 qplot(interval, steps, data=average_steps, geom="path", facets=day~.)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+![plot of chunk unnamed-chunk-15](figure/unnamed-chunk-15-1.png)
