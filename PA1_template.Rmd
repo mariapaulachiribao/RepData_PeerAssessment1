@@ -1,4 +1,9 @@
-<center> <h1> Reproducible Research: Peer Assessment 1 </h1> </center>
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
 
 Reading the dataset:
 

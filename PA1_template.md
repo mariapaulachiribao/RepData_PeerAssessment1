@@ -1,4 +1,9 @@
-<center> <h1> Reproducible Research: Peer Assessment 1 </h1> </center>
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
 
 Reading the dataset:
 
@@ -53,7 +58,7 @@ hist(steps_per_day$steps, col="blue", main = "Histogram steps per day",
      xlab = "Total number of steps")
 ```
 
-<img src="PA1_template_files/figure-html/unnamed-chunk-19-1.png" width="672" />
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 #### 3- Calculate and report the mean and median of the total number of steps taken per day
 
@@ -115,7 +120,7 @@ with(steps_per_interval, plot(interval, steps, type = "l", col = "blue",
                               ylab="average number of steps"))
 ```
 
-<img src="PA1_template_files/figure-html/unnamed-chunk-22-1.png" width="672" />
+![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 
 ### 2 - Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -216,14 +221,14 @@ hist(final_steps_per_day$steps, col = "blue", main = "Histogram Steps Per Day",
      xlab="Total number of steps")
 ```
 
-<img src="PA1_template_files/figure-html/unnamed-chunk-28-1.png" width="672" />
+![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
 
 Mean of steps: 10,766  
 Median of steps: 10,766
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
-### 1- Create a new factor variable in the dataset with two levels ñ ìweekdayî and ìweekendî
+### 1- Create a new factor variable in the dataset with two levels ‚Äì ‚Äúweekday‚Äù and ‚Äúweekend‚Äù
 
 First I created a new column with the name of the day
 
@@ -268,8 +273,4 @@ library(ggplot2)
 qplot(interval, steps, data=average_steps, geom="path", facets=day~.)
 ```
 
-<img src="PA1_template_files/figure-html/unnamed-chunk-31-1.png" width="672" />
-
-### - Create Html file
-
-
+![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
